@@ -12,8 +12,12 @@ const sql = readFileSync(join(__dirname, `${sqlFileName}.sql`), "utf8")
 
 const pool = mysql.createPool({
   connectionLimit: 10,
+  multipleStatements: true,
   ...config
 })
+
+table = 
+sql = `Select * from ${table}`
 
 pool.query(sql, (err, data) => {
   if (err) {

@@ -1,4 +1,4 @@
-const { _: [sqlFileName], e = "local", env = e } = require("simple-argv")
+const { _: [sqlFileName], e = "local", env = e} = require("simple-argv")
 if (!sqlFileName) {
   throw new Error("devi specificare il nome del file sql da eseguire come primo argomento del comando")
 }

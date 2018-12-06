@@ -16,9 +16,6 @@ const pool = mysql.createPool({
   ...config
 })
 
-table = 
-sql = `Select * from ${table}`
-
 pool.query(sql, (err, data) => {
   if (err) {
     console.log(err)

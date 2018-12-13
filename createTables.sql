@@ -1,7 +1,6 @@
 CREATE TABLE IF NOT EXISTS schools (
   id INT(11) AUTO_INCREMENT,
   name VARCHAR(45) NOT NULL,
-  email VARCHAR(45) UNIQUE NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -58,11 +57,12 @@ CREATE TABLE IF NOT EXISTS competitions (
 
 CREATE TABLE IF NOT EXISTS results (
   id INT(11) AUTO_INCREMENT,
-  schoolId INT(11) NOT NULL,
+  studentId INT(11) NOT NULL,
   competitionId INT(11) NOT NULL,
   alias VARCHAR(45),
-  score INT (11) NOT NULL,
-  FOREIGN KEY (schoolId) REFERENCES schools(id),
+  score INT (11),
+  ranking INT(11),
+  FOREIGN KEY (studentId) REFERENCES students(id),
   FOREIGN KEY (competitionId) REFERENCES competitions(id),
   PRIMARY KEY (id)
 );

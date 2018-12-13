@@ -39,7 +39,7 @@ const query = ["INSERT INTO users(schoolId, name, surname, cf) VALUES \n"]
 for (let i = 100; i < 600; i++) {
 	const name = names[i%30]
 	const surname = surnames[i%12]
-	query.push(`("${i%15+1}, "${name.replace(/\s/g, '')}", "${surname.replace(/\s/g, '')}", "${name.slice(0, 3)+surname.slice(0, 3)+"0000000"+i}")`)
+	query.push(`(${i%15+1}, "${name.replace(/\s/g, '')}", "${surname.replace(/\s/g, '')}", "${name.slice(0, 3)+surname.slice(0, 3)+"0000000"+i}")`)
 	query.push(",\n")
 }
 query.pop();

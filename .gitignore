@@ -42,3 +42,5 @@ Thumbs.db
 ##########
 db-config-*.json
 node_modules
+
+userSeeder.sql

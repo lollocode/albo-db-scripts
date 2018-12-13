@@ -28,19 +28,13 @@ CREATE TABLE IF NOT EXISTS students (
 
 CREATE TABLE IF NOT EXISTS tags (
   id INT(11) AUTO_INCREMENT,
-  name VARCHAR(45) UNIQUE NOT NULL,
+  name VARCHAR(45) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS subjects (
   id INT(11) AUTO_INCREMENT,
-  name VARCHAR(45) UNIQUE NOT NULL,
-  PRIMARY KEY (id)
-);
-
-CREATE TABLE IF NOT EXISTS types (
-  id INT(11) AUTO_INCREMENT,
-  name VARCHAR(45) UNIQUE NOT NULL,
+  name VARCHAR(45) NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -49,9 +43,7 @@ CREATE TABLE IF NOT EXISTS competitions (
   name VARCHAR(45) NOT NULL,
   compDate DATE NOT NULL,
   subjectId INT(11) NOT NULL,
-  typeId INT(11) NOT NULL,
   FOREIGN KEY (subjectId) REFERENCES subjects(id),
-  FOREIGN KEY (typeId) REFERENCES types(id),
   PRIMARY KEY (id)
 );
 
@@ -72,15 +64,6 @@ CREATE TABLE IF NOT EXISTS tags_competitions_th (
   tagId INT(11) NOT NULL,
   competitionId INT(11) NOT NULL,
   FOREIGN KEY (tagId) REFERENCES tags(id),
-  FOREIGN KEY (competitionId) REFERENCES competitions(id),
-  PRIMARY KEY (id)
-);
-
-CREATE TABLE IF NOT EXISTS types_competitions_th (
-  id INT(11) AUTO_INCREMENT,
-  typeId INT(11) NOT NULL,
-  competitionId INT(11) NOT NULL,
-  FOREIGN KEY (typeId) REFERENCES types(id),
   FOREIGN KEY (competitionId) REFERENCES competitions(id),
   PRIMARY KEY (id)
 );

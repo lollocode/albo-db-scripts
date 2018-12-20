@@ -34,7 +34,7 @@ const names = [
 ]
 const surnames = ["Cruz","Middleton","Villegas","Wagner","Vang","Brock","Ponce","Wiley","Rosario","Jordan","Huffman","Fernandez"]
 
-const query = ["INSERT INTO users(schoolId, name, surname, cf) VALUES \n"]
+const query = ["INSERT INTO students(schoolId, name, surname, cf) VALUES \n"]
 
 for (let i = 100; i < 600; i++) {
 	const name = names[i%30]

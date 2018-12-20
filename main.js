@@ -21,5 +21,12 @@ pool.query(sql, (err, data) => {
     console.log(err)
   } else {
     console.log(data)
+    pool.end((err) => {
+      if (err) {
+        console.log(err)
+      } else {
+        console.log("closed")
+      }
+    })
   }
 })

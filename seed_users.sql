@@ -1,0 +1,17 @@
+INSERT INTO users(email,password,schoolId,name,surname) VALUES 
+("Lorenzo.Rossi@gmail.com","Lorenzo_Rossi",1,"Lorenzo","Rossi"),
+("Tiziana.Segalini@gmail.com","Tiziana_Segalini",2,"Tiziana","Segalini"),
+("Marco.Esposito@gmail.com","Marco_Esposito",3,"Marco","Esposito"),
+("Luca.Bianchi@gmail.com","Luca_Bianchi",4,"Luca","Bianchi"),
+("Sara.Romano@gmail.com","Sara_Romano",5,"Sara","Romano"),
+("Giovanni.Bruno@gmail.com","Giovanni_Bruno",6,"Giovanni","Bruno"),
+("Marta.Gallo@gmail.com","Marta_Gallo",7,"Marta","Gallo"),
+("Camilla.Conti@gmail.com","Camilla_Conti",8,"Camilla","Conti"),
+("Alberta.Moretti@gmail.com","Alberta_Moretti",9,"Alberta","Moretti"),
+("Carla.Barbieri@gmail.com","Carla_Barbieri",10,"Carla","Barbieri"),
+("Andrea.Rinaldi@gmail.com","Andrea_Rinaldi",11,"Andrea","Rinaldi"),
+("Giulio.Coppola@gmail.com","Giulio_Coppola",12,"Giulio","Coppola"),
+("Simone.Villa@gmail.com","Simone_Villa",13,"Simone","Villa"),
+("Alessia.Fabbri@gmail.com","Alessia_Fabbri",14,"Alessia","Fabbri"),
+("Federica.Codeluppi@gmail.com","Federica_Codeluppi",15,"Federica","Codeluppi"),
+;

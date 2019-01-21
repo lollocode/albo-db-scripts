@@ -16,8 +16,7 @@ for(let n=0;n<15;n++){
 	query.push(`("${email[n]}","${password[n]}",${school[n]},"${name[n]}","${surname[n]}")`)
 	query.push(",\n")
 }
-
-
+query.pop()
 query.push(";")
 writeFileSync("seed_users.sql", query.join(""), "utf8")
 console.log("users seeder query generated!")

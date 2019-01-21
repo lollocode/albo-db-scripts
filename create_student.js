@@ -44,5 +44,5 @@ for (let i = 100; i < 600; i++) {
 }
 query.pop();
 query.push(";")
-writeFileSync("studentSeeder.sql", query.join(""), "utf8")
+writeFileSync("seed_students.sql", query.join(""), "utf8")
 console.log("student seeder query generated!")

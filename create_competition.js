@@ -1,6 +1,6 @@
 const { writeFileSync } = require("fs")
 
-const names = [
+const name = [
 	"gara bella",
 	"gara brutta",
 	"gara bellina",
@@ -13,7 +13,7 @@ const names = [
 	"gara bruttina",
 	"gara carina"
 ]
-const data = [
+const dates = [
 	'2018-01-01',
 	'2018-02-12',
 	'2018-03-25',
@@ -27,18 +27,15 @@ const data = [
 	'2018-07-09'
 	]
 
-const materia = [1,2,3,4,5,1,2,3,4,5,1,2]
+const subjects = [1,2,3,4,5,1,2,3,4,5,1,2]
 
 const query = ["INSERT INTO competitions VALUES \n"]
 
 for (let i = 0; i < 11; i++) {
-	const name = names[i]
-	const date = data[i]
-	const subject = materia[i]
-	query.push(`("${name}","${date}",${subject})`)
+	query.push(`(DEFAULT,"${name[i]}","${dates[i]}",${subjects[i]})`)
 	query.push(",\n")
 }
 query.pop();
 query.push(";")
-writeFileSync("competitionSeeder.sql", query.join(""), "utf8")
+writeFileSync("seed_competition.sql", query.join(""), "utf8")
 console.log("competitions seeder query generated!")

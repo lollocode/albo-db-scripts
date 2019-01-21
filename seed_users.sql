@@ -13,5 +13,4 @@ INSERT INTO users(email,password,schoolId,name,surname) VALUES
 ("Giulio.Coppola@gmail.com","Giulio_Coppola",12,"Giulio","Coppola"),
 ("Simone.Villa@gmail.com","Simone_Villa",13,"Simone","Villa"),
 ("Alessia.Fabbri@gmail.com","Alessia_Fabbri",14,"Alessia","Fabbri"),
-("Federica.Codeluppi@gmail.com","Federica_Codeluppi",15,"Federica","Codeluppi"),
-;
+("Federica.Codeluppi@gmail.com","Federica_Codeluppi",15,"Federica","Codeluppi");

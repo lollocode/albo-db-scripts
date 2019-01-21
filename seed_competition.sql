@@ -9,5 +9,4 @@ INSERT INTO competitions VALUES
 (DEFAULT,"gara brutta","2018-12-25",3),
 (DEFAULT,"gara bellina","2018-10-30",4),
 (DEFAULT,"gara bruttina","2018-2-17",5),
-(DEFAULT,"gara carina","2018-07-09",1),
-;
+(DEFAULT,"gara carina","2018-07-09",1);
